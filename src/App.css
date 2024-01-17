@@ -1,15 +1,26 @@
+
 .App {
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: blueviolet;
 }
 
 #quote-box {
   border: 3px solid black;
   padding: 3vw;
-  min-width: 30vw;
+  width: 50%;
   margin: 0 1em;
+  background-color: white;
+  border-radius: 1%;
+  border: 0;
+  
+}
+
+#text {
+  font-size: 2em;
+  display: inline;
 }
 
 #button-wrapper {
@@ -17,30 +28,76 @@
   flex-direction: row;
   justify-content:space-between;
   clear:both;
+  height: 40px;
 }
 
-#new-quote {
-  width: auto;
+#tweet-quote, #tumblr-quote {
+  float: left;
+  margin-right: 5%;
+}
+
+#tumblr-quote {
+  padding: 3px 15px;
+  font-size: 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #tweet-quote {
-  float: left;
+  padding: 3px 12px;
+  font-size: 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
+
+#tweet-quote:hover, #tumblr-quote:hover, #new-quote:hover {
+opacity: 80%;
+transition-duration: 0.5s;
+cursor: pointer;
+}
+
 
 
 #author {
-  float: right;
-  margin-top: 0;
+  text-align: right;
+  margin-top: 1rem;
   margin-bottom: 2rem;
-}
-
-#tweet-quote {
-  margin-right: 10%;
+  width: 100%;
+  font-size: 1em;
 }
 
 
 #share-buttons {
   width: 50%;
+
+}
+
+
+#new-quote {
+  border: 0;
+  border-radius: 3%;
+  width: auto;
+  color: white;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+
+
+#quotemark {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  display:inline;
+  position: relative;
+  top: 10px;
+  line-height: 16px;
+}
+
+.logos{
+  line-height: 100%;
 }
 
 

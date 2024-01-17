@@ -5,7 +5,7 @@ function Button(props) {
     }
 
     return (
-        <button id="new-quote" type="button" onClick={handleClick}>
+        <button style={{backgroundColor: props.bgColor}}id="new-quote" type="button" onClick={handleClick}>
         New quote
       </button>
     )
